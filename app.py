@@ -7,11 +7,12 @@ from langchain_openai.embeddings.base import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_openai.chat_models import ChatOpenAI
 from langchain.chains.retrieval_qa.base import RetrievalQA
+from dotenv import load_dotenv
 import os
 
-##OPENAI_API_KEY = getpass('API Key de OPEN AI: ')
-OPENAI_API_KEY = ""
-os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
+load_dotenv('.env')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+PATH_ARCHIVOS = os.getenv('PATH_ARCHIVOS')
 
 
 def carga_documentos():
