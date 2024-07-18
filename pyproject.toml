@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "testia"
+version = "0.0.1"
+description = "Scripts de prueba de IA"
+authors = ["Manuel Borja <sistemas@arzobispadodelima.org>"]
+license = "Open"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain-community = "^0.2.6"
+pypdf = "^4.2.0"
+openai = "^1.35.10"
+chromadb = "^0.5.3"
+tiktoken = "^0.7.0"
+requests = "^2.32.3"
+streamlit = "^1.36.0"
+langchain-openai = "^0.1.14"
+langchain-chroma = "^0.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
