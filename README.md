@@ -18,13 +18,10 @@ pip install poetry
 ## crear entorno poetry
 poetry install
 
-## ejecutar entorno
-poetry shell
-
 ## ejecutar script de consulta
 poetry run python consulta.py
 
-## ejecutar wev de consulta
-poetry run streamlit run app.py
+## ejecutar web de consulta
+poetry run streamlit run page.py
 
 
