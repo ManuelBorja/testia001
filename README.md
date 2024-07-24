@@ -24,4 +24,4 @@ poetry run python consulta.py
 ## ejecutar web de consulta
 poetry run streamlit run page.py
 
-
+GPT RESEARCHER
